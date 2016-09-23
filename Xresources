@@ -1,0 +1,96 @@
+! Use a nice truetype font and size by default...
+xterm*faceName: DejaVu Sans Mono Book
+xterm*faceSize: 11
+
+! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+xterm*loginshell: true
+
+! I like a LOT of scrollback...
+xterm*savelines: 16384
+
+! double-click to select whole URLs :D
+xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+xterm*rightScrollBar: false
+xterm*ScrollBar: false
+
+! stop output to terminal from jumping down to bottom of scroll again
+xterm*scrollTtyOutput: false
+
+!special
+*.foreground:   #565e65
+*.background:   #f3f4f5
+*.cursorColor:  #565e65
+
+! black
+*.color0:       #1c2023
+*.color8:       #747c84
+
+! red
+*.color1:       #c7ae95
+*.color9:       #c7ae95
+
+! green
+*.color2:       #95c7ae
+*.color10:      #95c7ae
+
+! yellow
+*.color3:       #aec795
+*.color11:      #aec795
+
+! blue
+*.color4:       #ae95c7
+*.color12:      #ae95c7
+
+! magenta
+*.color5:       #c795ae
+*.color13:      #c795ae
+
+! cyan
+*.color6:       #95aec7
+*.color14:      #95aec7
+
+! white
+*.color7:       #c7ccd1
+*.color15:      #f3f4f5
+
+
+
+!Colors
+!*foreground: #696969
+!*background: #fffef6
+!*color0: #363636
+!*color8: #424242
+!*color1: #C37561
+!*color9:  #D19485
+!*color2: #A0A57E
+!*color10: #7f8264
+!*color3: #b58b62
+!*color11: #DEBC9C
+!*color4: #1d2b41
+!*color12: #98A1B9
+!*color5: #AB716D
+!*color13: #b4d2c8
+!*color6: #98B9B1
+!*color14: #769293
+!*color7: #9ba0a7
+!*color15: #6e7383
+
+!!Theme Twenty-Four
+!*color0:  rgb:00/00/00
+!*color1:  rgb:cd/5c/5c
+!*color2:  rgb:8e/ae/71
+!*color3:  rgb:d2/b4/8c
+!*color4:  rgb:5f/7b/8a
+!*color5:  rgb:cd/cd/b4
+!*color6:  rgb:68/68/68
+!*color7:  rgb:ff/ff/ff
+!*color8:  rgb:00/00/00
+!*color9:  rgb:ee/63/63
+!*color10: rgb:95/c7/49
+!*color11: rgb:cd/cd/c1
+!*color12: rgb:6b/7b/8a
+!*color13: rgb:cd/cd/b4
+!*color14: rgb:77/87/98
+!*color15: rgb:ca/ca/ca
+
