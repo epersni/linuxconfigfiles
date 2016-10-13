@@ -1,6 +1,6 @@
 ! Use a nice truetype font and size by default...
-xterm*faceName: DejaVu Sans Mono Book
-xterm*faceSize: 11
+XTerm*faceName: DejaVu Sans Mono
+XTerm*faceSize: 12
 
 ! Every shell is a login shell by default (for inclusion of all necessary environment variables)
 xterm*loginshell: true
@@ -17,80 +17,97 @@ xterm*ScrollBar: false
 ! stop output to terminal from jumping down to bottom of scroll again
 xterm*scrollTtyOutput: false
 
-!special
-*.foreground:   #565e65
-*.background:   #f3f4f5
-*.cursorColor:  #565e65
+!BLK Cursor
+#define _color0        #000d18
+#define _color8        #000d18
 
-! black
-*.color0:       #1c2023
-*.color8:       #747c84
+!RED Tag
+#define _color1        #e89393
+#define _color9        #e89393
 
-! red
-*.color1:       #c7ae95
-*.color9:       #c7ae95
+!GRN SpecialKey
+#define _color2        #9ece9e
+#define _color10       #9ece9e
 
-! green
-*.color2:       #95c7ae
-*.color10:      #95c7ae
+!YEL Keyword
+#define _color3        #f0dfaf
+#define _color11       #f0dfaf
 
-! yellow
-*.color3:       #aec795
-*.color11:      #aec795
+!BLU Number
+#define _color4        #8cd0d3
+#define _color12       #8cd0d3
 
-! blue
-*.color4:       #ae95c7
-*.color12:      #ae95c7
+!MAG Precondit
+#define _color5        #c0bed1
+#define _color13       #c0bed1
 
-! magenta
-*.color5:       #c795ae
-*.color13:      #c795ae
+!CYN Float
+#define _color6        #dfaf8f
+#define _color14       #dfaf8f
 
-! cyan
-*.color6:       #95aec7
-*.color14:      #95aec7
+!WHT Search
+#define _color7        #efefef
+#define _color15       #efefef
 
-! white
-*.color7:       #c7ccd1
-*.color15:      #f3f4f5
+!FMT Include, StatusLine, ErrorMsg
+#define _colorBD       #ffcfaf
+#define _colorUL       #ccdc90
+#define _colorIT       #80d4aa
 
+!TXT Normal, Normal, Cursor
+#define _foreground    #dcdccc
+#define _background    #1f1f1f
+#define _cursorColor   #8faf9f
 
+URxvt*color0         : _color0
+URxvt*color1         : _color1
+URxvt*color2         : _color2
+URxvt*color3         : _color3
+URxvt*color4         : _color4
+URxvt*color5         : _color5
+URxvt*color6         : _color6
+URxvt*color7         : _color7
+URxvt*color8         : _color8
+URxvt*color9         : _color9
+URxvt*color10        : _color10
+URxvt*color11        : _color11
+URxvt*color12        : _color12
+URxvt*color13        : _color13
+URxvt*color14        : _color14
+URxvt*color15        : _color15
+URxvt*colorBD        : _colorBD
+URxvt*colorIT        : _colorIT
+URxvt*colorUL        : _colorUL
+URxvt*foreground     : _foreground
+URxvt*background     : _background
+URxvt*cursorColor    : _cursorColor
 
-!Colors
-!*foreground: #696969
-!*background: #fffef6
-!*color0: #363636
-!*color8: #424242
-!*color1: #C37561
-!*color9:  #D19485
-!*color2: #A0A57E
-!*color10: #7f8264
-!*color3: #b58b62
-!*color11: #DEBC9C
-!*color4: #1d2b41
-!*color12: #98A1B9
-!*color5: #AB716D
-!*color13: #b4d2c8
-!*color6: #98B9B1
-!*color14: #769293
-!*color7: #9ba0a7
-!*color15: #6e7383
+XTerm*color0         : _color0
+XTerm*color1         : _color1
+XTerm*color2         : _color2
+XTerm*color3         : _color3
+XTerm*color4         : _color4
+XTerm*color5         : _color5
+XTerm*color6         : _color6
+XTerm*color7         : _color7
+XTerm*color8         : _color8
+XTerm*color9         : _color9
+XTerm*color10        : _color10
+XTerm*color11        : _color11
+XTerm*color12        : _color12
+XTerm*color13        : _color13
+XTerm*color14        : _color14
+XTerm*color15        : _color15
+XTerm*colorBD        : _colorBD
+XTerm*colorIT        : _colorIT
+XTerm*colorUL        : _colorUL
+XTerm*foreground     : _foreground
+XTerm*background     : _background
+XTerm*cursorColor    : _cursorColor
 
-!!Theme Twenty-Four
-!*color0:  rgb:00/00/00
-!*color1:  rgb:cd/5c/5c
-!*color2:  rgb:8e/ae/71
-!*color3:  rgb:d2/b4/8c
-!*color4:  rgb:5f/7b/8a
-!*color5:  rgb:cd/cd/b4
-!*color6:  rgb:68/68/68
-!*color7:  rgb:ff/ff/ff
-!*color8:  rgb:00/00/00
-!*color9:  rgb:ee/63/63
-!*color10: rgb:95/c7/49
-!*color11: rgb:cd/cd/c1
-!*color12: rgb:6b/7b/8a
-!*color13: rgb:cd/cd/b4
-!*color14: rgb:77/87/98
-!*color15: rgb:ca/ca/ca
-
+! enable coloring for bold and underlined text
+XTerm*vt100.boldColors     : False
+XTerm*vt100.colorBDMode    : True
+XTerm*vt100.colorULMode    : True
+XTerm*vt100.colorRVMode    : False
+XTerm*vt100.veryBoldColors : 6
