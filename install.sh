@@ -9,3 +9,5 @@ ln -snf ${PWD}/gitconfig ${HOME}/.gitconfig
 ln -snf ${PWD}/screenrc ${HOME}/.screenrc
 
 ln -snf ${PWD}/bashrc ${HOME}/.bashrc
+
+ln -snf ${PWD}/initrc ${HOME}/.xinitrc
