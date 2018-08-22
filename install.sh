@@ -10,4 +10,6 @@ ln -snf ${PWD}/screenrc ${HOME}/.screenrc
 
 ln -snf ${PWD}/bashrc ${HOME}/.bashrc
 
-ln -snf ${PWD}/initrc ${HOME}/.xinitrc
+ln -snf ${PWD}/xinitrc ${HOME}/.xinitrc
+
+ln -snf ${PWD}/dircolors ${HOME}/.dircolors
