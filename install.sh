@@ -13,3 +13,7 @@ ln -snf ${PWD}/bashrc ${HOME}/.bashrc
 ln -snf ${PWD}/xinitrc ${HOME}/.xinitrc
 
 ln -snf ${PWD}/dircolors ${HOME}/.dircolors
+
+ln -snf ${PWD}/profile ${HOME}/.profile
+
+ln -snf ${PWD}/wallpaper ${HOME}/.wallpaper
