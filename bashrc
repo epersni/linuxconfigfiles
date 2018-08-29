@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alias ll='ls -alh --color'
+alias ll='ls -alh --color --group-directories-first'
 
 if [ -f /etc/bashrc ]; then
         . /etc/bashrc
