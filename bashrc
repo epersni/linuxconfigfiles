@@ -5,6 +5,7 @@ alias ll='ls -alh --color --group-directories-first'
 
 alias ncopy='xclip -selection clipboard'
 alias npaste='xclip -selection clipboard -o'
+alias prettyjson='python -m json.tool'
 
 if [ -f /etc/bashrc ]; then
         . /etc/bashrc
