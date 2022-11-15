@@ -1,6 +1,18 @@
+! Load a resource file (such as the conventional .Xresources), replacing any current settings:
+! $ xrdb ~/.Xresources
+!
+! Load a resource file, and merge with the current settings:
+!
+! $ xrdb -merge ~/.Xresources
+!
+! To see the currently loaded resources:
+!
+! $ xrdb -query -all
+!
+
 ! Use a nice truetype font and size by default...
 XTerm*faceName: DejaVu Sans Mono
-XTerm*faceSize: 12
+XTerm*faceSize: 16
 
 ! Every shell is a login shell by default (for inclusion of all necessary environment variables)
 xterm*loginshell: true
@@ -17,97 +29,42 @@ xterm*ScrollBar: false
 ! stop output to terminal from jumping down to bottom of scroll again
 xterm*scrollTtyOutput: false
 
-!BLK Cursor
-#define _color0        #000d18
-#define _color8        #000d18
 
-!RED Tag
-#define _color1        #e89393
-#define _color9        #e89393
+!  The colors 0-7 are the 'normal' colors. Colors 8-15 are their 'bright' counterparts, used for highlighting
 
-!GRN SpecialKey
-#define _color2        #9ece9e
-#define _color10       #9ece9e
+! special
+*.foreground:   #4a4543
+*.background:   #f7f7f7
+*.cursorColor:  #4a4543
 
-!YEL Keyword
-#define _color3        #f0dfaf
-#define _color11       #f0dfaf
+! black
+*.color0:       #090300
+*.color8:       #5c5855
 
-!BLU Number
-#define _color4        #8cd0d3
-#define _color12       #8cd0d3
+! red
+*.color1:       #db2d20
+*.color9:       #db2d20
 
-!MAG Precondit
-#define _color5        #c0bed1
-#define _color13       #c0bed1
+! green
+*.color2:       #01a252
+*.color10:      #01a252
 
-!CYN Float
-#define _color6        #dfaf8f
-#define _color14       #dfaf8f
+! yellow
+*.color3:       #99900b
+*.color11:      #c9c36b
 
-!WHT Search
-#define _color7        #efefef
-#define _color15       #efefef
+! blue
+*.color4:       #01a0e4
+*.color12:      #01a0e4
 
-!FMT Include, StatusLine, ErrorMsg
-#define _colorBD       #ffcfaf
-#define _colorUL       #ccdc90
-#define _colorIT       #80d4aa
+! magenta
+*.color5:       #a16a94
+*.color13:      #a16a94
 
-!TXT Normal, Normal, Cursor
-#define _foreground    #dcdccc
-#define _background    #1f1f1f
-#define _cursorColor   #8faf9f
+! cyan
+*.color6:      #2b808a
+*.color14:     #738587
 
-URxvt*color0         : _color0
-URxvt*color1         : _color1
-URxvt*color2         : _color2
-URxvt*color3         : _color3
-URxvt*color4         : _color4
-URxvt*color5         : _color5
-URxvt*color6         : _color6
-URxvt*color7         : _color7
-URxvt*color8         : _color8
-URxvt*color9         : _color9
-URxvt*color10        : _color10
-URxvt*color11        : _color11
-URxvt*color12        : _color12
-URxvt*color13        : _color13
-URxvt*color14        : _color14
-URxvt*color15        : _color15
-URxvt*colorBD        : _colorBD
-URxvt*colorIT        : _colorIT
-URxvt*colorUL        : _colorUL
-URxvt*foreground     : _foreground
-URxvt*background     : _background
-URxvt*cursorColor    : _cursorColor
-
-XTerm*color0         : _color0
-XTerm*color1         : _color1
-XTerm*color2         : _color2
-XTerm*color3         : _color3
-XTerm*color4         : _color4
-XTerm*color5         : _color5
-XTerm*color6         : _color6
-XTerm*color7         : _color7
-XTerm*color8         : _color8
-XTerm*color9         : _color9
-XTerm*color10        : _color10
-XTerm*color11        : _color11
-XTerm*color12        : _color12
-XTerm*color13        : _color13
-XTerm*color14        : _color14
-XTerm*color15        : _color15
-XTerm*colorBD        : _colorBD
-XTerm*colorIT        : _colorIT
-XTerm*colorUL        : _colorUL
-XTerm*foreground     : _foreground
-XTerm*background     : _background
-XTerm*cursorColor    : _cursorColor
-
-! enable coloring for bold and underlined text
-XTerm*vt100.boldColors     : False
-XTerm*vt100.colorBDMode    : True
-XTerm*vt100.colorULMode    : True
-XTerm*vt100.colorRVMode    : False
-XTerm*vt100.veryBoldColors : 6
+! white
+*.color7:       #a5a2a2
+*.color15:      #f7f7f7
